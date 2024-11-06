@@ -87,10 +87,9 @@ namespace Proyecto_Cola_EESA
             if (!UnderFlow())
             {
                 int Valor;
-                NODO act;
-                act = inicio;
+
                 Valor = Convert.ToInt32(inicio);
-                inicio = act.Sig;
+                inicio = inicio.Sig;
                 count--;
                 return Valor;
             }

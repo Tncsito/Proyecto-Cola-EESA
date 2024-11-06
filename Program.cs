@@ -12,6 +12,7 @@
             {
                 try
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Clear();
                     Console.WriteLine("\tMenu");
                     Console.WriteLine("-------------------------");
@@ -27,20 +28,26 @@
                     switch (opc)
                     {
                         case 1: //Set Size
-                            Console.Write("Escribe el nuevo tamaño de la pila => ");
+                            Console.Write("Escribe el tamaño de la cola => ");
                             n = Convert.ToInt32(Console.ReadLine());
                             a.Size(n);
                             Console.Clear();
                             Console.WriteLine("¡Tamaño de Cola ajustado correctamente! \n");
                             break;
                         case 2: //Insert
-
+                            Console.Write("Escribe numero a insertar => ");
+                            int nn = Convert.ToInt32(Console.ReadLine());
+                            if (a.Insert(nn))
+                                Console.WriteLine("¡Numero agregado correctamente!");
+                            else
+                                Console.WriteLine("Numero no Agregado");
                             break;
                         case 3: //Extract
-
+                            int v = a.Extract();
+                            Console.WriteLine($"Numero {v} sacado correctamente");
                             break;
                         case 4: //Print
-
+                            a.Print();
                             break;
                         case 5: //Salir
                             p = false;
