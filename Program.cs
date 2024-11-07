@@ -52,7 +52,10 @@
                             Console.WindowHeight = 10;
                             Console.WindowWidth = 35;
                             int v = a.Extract();
-                            Console.WriteLine($"Numero {v} sacado correctamente");
+                            if (v == -1)
+                                Console.WriteLine("El numero está vacío");
+                            else
+                                Console.WriteLine($"Numero {v} sacado correctamente");
                             break;
                         case 4: //Print
                             Console.WindowHeight = 10;

@@ -33,6 +33,8 @@ namespace Proyecto_Cola_EESA
         public void Size(int n)
         {
              MAX = n;
+            inicio = null;
+            count = 0;
         }
         public void Print()
         {
