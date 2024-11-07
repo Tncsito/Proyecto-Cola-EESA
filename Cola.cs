@@ -40,7 +40,7 @@ namespace Proyecto_Cola_EESA
         {
             if (inicio == null)
             {
-                Console.WriteLine("La pila está vacía");
+                Console.WriteLine("La cola está vacía");
             }
             else
             {

@@ -6,7 +6,7 @@
         {
             bool p = true;
             int n = 99;
-            Cola a = new Cola(n); // Inicializa la pila fuera del bucle
+            Cola a = new Cola(n); // Inicializa la cola fuera del bucle
 
             while (p)
             {
@@ -18,11 +18,11 @@
                     Console.Clear();
                     Console.WriteLine("\tMenu");
                     Console.WriteLine("-------------------------");
-                    Console.WriteLine("1.- Set Size");              //Prueba
-                    Console.WriteLine("2.- Insert");                //Prueba
-                    Console.WriteLine("3.- Extract");               //Prueba
-                    Console.WriteLine("4.- Print");                 //Prueba
-                    Console.WriteLine("5.- Exit");                  //Prueba
+                    Console.WriteLine("1.- Set Size");              //TERMINADO
+                    Console.WriteLine("2.- Insert");                //TERMINADO
+                    Console.WriteLine("3.- Extract");               //TERMINADO
+                    Console.WriteLine("4.- Print");                 //TERMINADO
+                    Console.WriteLine("5.- Exit");                  //TERMINADO
                     Console.WriteLine("-------------------------");
                     Console.Write("Select Option => ");
                     int opc = int.Parse(Console.ReadLine());
