@@ -75,7 +75,7 @@
                     Console.Write("\n\n\n\n\n\n\t<Presiona cualquier tecla para continuar>");
                     Console.ReadKey();
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Console.WindowHeight = 10;
                     Console.WindowWidth = 60;
