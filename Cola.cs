@@ -42,14 +42,14 @@ namespace Proyecto_Cola_EESA
             }
             else
             {
-                Console.Write("Base => ");
+                Console.Write("Primero => ");
                 NODO act = inicio;
                 while (act != null)
                 {
                     Console.Write($"{act.Valor} => ");
                     act = act.Sig;
                 }
-                Console.WriteLine("Inicio");
+                Console.WriteLine("Ultimo");
             }
         }
         public int Count()
@@ -86,12 +86,10 @@ namespace Proyecto_Cola_EESA
         {
             if (!UnderFlow())
             {
-                int Valor;
-
-                Valor = Convert.ToInt32(inicio);
+                int v = inicio.Valor;
                 inicio = inicio.Sig;
                 count--;
-                return Valor;
+                return v;
             }
             //Regresa valor extraido, si está vacia o no pudo extraer regresa -1
             return -1;
